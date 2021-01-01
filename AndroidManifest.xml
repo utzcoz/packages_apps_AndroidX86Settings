@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.androidx86.settings"
+    android:sharedUserId="android.uid.system">
+
+    <application
+        android:name=".AndroidX86SettingsApplication"
+        android:allowBackup="false"
+        android:defaultToDeviceProtectedStorage="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_settings_applications"
+        android:label="@string/ic_name"
+        android:requiredForAllUsers="true"
+        android:supportsRtl="true"
+        android:taskAffinity=""
+        android:theme="@style/Theme.Settings"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".AndroidX86Settings"
+            android:exported="true"
+            android:icon="@drawable/ic_settings_applications"
+            android:label="@string/ic_name">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data
+                android:name="com.android.settings.title"
+                android:value="@string/boringdorid_dashboard_title" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:value="@string/boringdorid_dashboard_summary" />
+        </activity>
+
+        <receiver android:name=".DownloadCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
