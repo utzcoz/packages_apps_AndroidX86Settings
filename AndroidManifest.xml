@@ -30,10 +30,30 @@
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data
                 android:name="com.android.settings.title"
-                android:value="@string/boringdorid_dashboard_title" />
+                android:value="@string/android_x86_dashboard_title" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:value="@string/boringdorid_dashboard_summary" />
+                android:value="@string/android_x86_dashboard_summary" />
+        </activity>
+
+        <activity
+                android:name=".AndroidX86AboutSettings"
+                android:exported="true"
+                android:icon="@drawable/ic_settings_applications"
+                android:label="@string/ic_name">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="com.android.settings.category"
+                    android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                    android:name="com.android.settings.title"
+                    android:value="@string/android_x86_about_dashboard_title" />
+            <meta-data
+                    android:name="com.android.settings.summary"
+                    android:value="@string/android_x86_about_dashboard_summary" />
         </activity>
 
         <receiver android:name=".DownloadCompleteReceiver">
