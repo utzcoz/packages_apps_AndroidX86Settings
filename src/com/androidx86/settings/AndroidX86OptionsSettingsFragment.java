@@ -33,7 +33,7 @@ import java.io.File;
 
 import dalvik.system.VMRuntime;
 
-public class AndroidX86SettingsFragment extends PreferenceFragmentCompat {
+public class AndroidX86OptionsSettingsFragment extends PreferenceFragmentCompat {
     private static final String TAG = "Dl-NB";
 
     private static final String PROPERTY_NATIVEBRIDGE = "persist.sys.nativebridge";
@@ -50,7 +50,7 @@ public class AndroidX86SettingsFragment extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(R.xml.main_preference, rootKey);
+        setPreferencesFromResource(R.xml.options_preference, rootKey);
 
         if (getContext() != null) {
             mDownloadManager = (DownloadManager) getContext().getSystemService(Context.DOWNLOAD_SERVICE);

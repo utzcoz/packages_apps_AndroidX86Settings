@@ -21,7 +21,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import static com.androidx86.settings.AndroidX86SettingsFragment.onDownloadComplete;
+import static com.androidx86.settings.AndroidX86OptionsSettingsFragment.onDownloadComplete;
 
 public class DownloadCompleteReceiver extends BroadcastReceiver {
     @Override

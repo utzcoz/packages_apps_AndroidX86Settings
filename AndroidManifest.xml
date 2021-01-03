@@ -17,10 +17,10 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".AndroidX86Settings"
+            android:name=".AndroidX86OptionsSettings"
             android:exported="true"
             android:icon="@drawable/ic_settings_applications"
-            android:label="@string/ic_name">
+            android:label="@string/android_x86_dashboard_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
@@ -40,7 +40,7 @@
                 android:name=".AndroidX86AboutSettings"
                 android:exported="true"
                 android:icon="@drawable/ic_settings_about"
-                android:label="@string/ic_name">
+                android:label="@string/android_x86_about_dashboard_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>

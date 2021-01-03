@@ -22,14 +22,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AndroidX86Settings extends AppCompatActivity {
+public class AndroidX86OptionsSettings extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings_main);
+        setContentView(R.layout.settings_options);
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.settings_container, new AndroidX86SettingsFragment())
+                .replace(R.id.settings_container, new AndroidX86OptionsSettingsFragment())
                 .commit();
 
         // Enable back button for preference activity

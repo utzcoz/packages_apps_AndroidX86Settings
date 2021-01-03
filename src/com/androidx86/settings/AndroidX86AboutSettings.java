@@ -9,10 +9,10 @@ public class AndroidX86AboutSettings extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings_main);
+        setContentView(R.layout.settings_about);
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.settings_container, new AndroidX86SettingsFragment())
+                .replace(R.id.settings_container, new AndroidX86AboutSettingsFragment())
                 .commit();
 
         // Enable back button for preference activity
